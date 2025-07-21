@@ -12,6 +12,10 @@ export const router = createBrowserRouter([
     element: React.createElement(App),
     children: [
       {
+        index: true,
+        element: React.createElement(Home),
+      },
+      {
         path: "home",
         element: React.createElement(Home),
       },

@@ -48,7 +48,7 @@ const Home = () => {
             />
           </div>
 
-          <div className="md:w-1/2 text-gray-700 bg-white/90 shadow-lg p-8 rounded-lg">
+          <article className="md:w-1/2 text-gray-700 bg-white/90 shadow-lg p-8 rounded-lg">
             <h3 className="text-xl font-medium mb-4 ">
               Artisan Roasters Since 2010
             </h3>
@@ -76,7 +76,7 @@ const Home = () => {
               exceptional coffee should be both scientifically excellent and
               soulfully satisfying.
             </p>
-          </div>
+          </article>
         </div>
       </section>
       <section className="bg-amber-50 py-12">

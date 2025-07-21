@@ -1,4 +1,9 @@
+import { Coffee, Leaf, Users } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
+
 const About = () => {
+  const navigate = useNavigate();
   return (
     <>
       <section className="bg-[url(/img/black-coffee.jpg)] h-screen bg-fixed bg-cover bg-center">
@@ -27,52 +32,78 @@ const About = () => {
             />
           </div>
 
-          <div className="md:w-1/2 bg-white/90 shadow-lg rounded-lg p-6 text-[#333]">
-            <h3 className="text-2xl font-semibold mb-4 text-[#4b3621]">
-              Founder's Story
-            </h3>
-            <p className="mb-4">
-              In 2019, after a decade immersed in the global coffee
-              industry—from trading beans to mastering quality assurance and
-              logistics—our founder set out to redefine the coffee experience in
-              Nairobi and beyond. The Kahve Lifestyle was born from a simple
-              belief: coffee should be more than a commodity; it&apos;s a
-              catalyst for connection, health, and joy.
+          <article className="md:w-1/2 bg-white/90 shadow-lg rounded-lg p-6 text-[#333]">
+            <p className="text-lg">
+              At Kahve, we believe coffee is more than just a beverage —
+              it&apos;s a lifestyle rooted in mindfulness, wellness, and
+              community. Born from a passion for both the art of coffee and the
+              science of self-care, our mission is to create a space where every
+              sip feels intentional. From ethically-sourced beans and clean
+              ingredients to a serene café experience, we&apos;re redefining
+              coffee culture for the conscious consumer — one cup at a time
             </p>
+          </article>
+        </div>
+      </section>
+      <section className="bg-[#f4ebe8] py-12">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-[#6f4e37] mb-4">
+            Our Mission
+          </h2>
+          <p className="text-lg text-[#333] mb-6">
+            To elevate the coffee experience through ethical sourcing, artisan
+            roasting, and wellness-focused café culture.
+          </p>
+          <h2 className="text-3xl font-bold text-[#6f4e37] mb-4">Our Vision</h2>
+          <p className="text-lg text-[#333]">
+            To build a conscious coffee lifestyle brand rooted in health,
+            connection, and sustainability — from Nairobi to the world.
+          </p>
+        </div>
+      </section>
+      <section className="bg-[#f9f5f3] py-12">
+        <h2 className="text-3xl font-bold text-center text-[#6f4e37] mb-8">
+          Our Core Values
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6 text-center">
+          <div>
+            <Coffee className="mx-auto mb-3 text-[#6f4e37]" size={36} />
+            <h3 className="font-semibold text-lg mb-2">Quality</h3>
+            <p>Handpicked, roasted to perfection, and brewed with love.</p>
+          </div>
+          <div>
+            <Leaf className="mx-auto mb-3 text-[#6f4e37]" size={36} />
+            <h3 className="font-semibold text-lg mb-2">Sustainability</h3>
             <p>
-              Today, we blend artisanal coffee with fresh, local produce to
-              create a lifestyle that nourishes both body and soul.
+              We care for the planet by sourcing ethically and reducing waste.
+            </p>
+          </div>
+          <div>
+            <Users className="mx-auto mb-3 text-[#6f4e37]" size={36} />
+            <h3 className="font-semibold text-lg mb-2">Community</h3>
+            <p>
+              From local farmers to loyal customers — you are part of our
+              journey.
             </p>
           </div>
         </div>
       </section>
-      <section className="bg-[#f4ebe8] py-12">
-        <h1 className="text-2xl font bold text-center">Meet the founder</h1>
-        <div className="flex flex-col md:flex-row items-center gap-7 max-w-6xl mx-auto">
-          <div className="md:w-1/2 bg-white/90 shadow-lg p-6 text-[#333]">
-            <p className="mb-4">
-              Coffee taught me patience. Now, I want it to bring people
-              happiness.
-            </p>
-
-            <ul className="mb-4">
-              <li>10+ years in coffee trading, QA, and logistics.</li>
-              <li>
-                Advocate for ethical sourcing and farm-to-cup transparency.
-              </li>
-              <li>
-                On a mission to merge coffee with Kenya&apos;s vibrant fresh
-                produce for a healthier lifestyle.
-              </li>
-            </ul>
-
-            <h1 className="text-center text-xl font-semibold">Why Coffee</h1>
-            <p>
-              My journey began when watching smallholder farmers hand-sort beans
-              under the Kenyan sun .That&apos;s why every Kahve product is
-              crafted to honor the craft, culture, and communities behind it.
-            </p>
-          </div>
+      <section className="bg-[#6f4e37] text-white py-12">
+        <div className="max-w-4xl mx-auto text-center px-6">
+          <h2 className="text-3xl font-bold mb-4">
+            Ready to Taste the Experience?
+          </h2>
+          <p className="mb-6">
+            Browse our handpicked selection of ethically-sourced coffee and
+            lifestyle products.
+          </p>
+          <Button
+            variant="secondary"
+            onClick={() => navigate("/shop")}
+            className="bg-white text-[#6f4e37] hover:bg-[#f4ebe8]"
+          >
+            Explore Products
+          </Button>
         </div>
       </section>
     </>
