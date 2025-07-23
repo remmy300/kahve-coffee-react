@@ -4,11 +4,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        coffee: "#6F4E37",
-        cream: "#F5F3EA",
-        espresso: "#362C2A",
-        latte: "#C7B299",
-        orange: "#F97316",
+        coffee: {
+          light: "#f4ebe8",
+          DEFAULT: "#6f4e37",
+          dark: "#4b3621",
+        },
+        accent: "#c0a17d", // gold-beige
+        rich: "#362e25", // rich espresso
+        cream: "#fef9f4", // light cream
+        charcoal: "#1f1d1a",
       },
     },
   },

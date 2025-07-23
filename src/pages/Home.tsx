@@ -35,8 +35,8 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <section className="bg-amber-50 py-12">
-        <h2 className="text-2xl font-semibold mt-3 text-center">
+      <section className="bg-white py-12">
+        <h2 className="text-2xl text-gray-800 font-semibold mt-3 text-center">
           Our Roasting Story
         </h2>
         <div className="py-16 px-6 max-w-6xl mx-auto flex flex-col md:flex-row gap-8 items-center">
@@ -48,30 +48,30 @@ const Home = () => {
             />
           </div>
 
-          <article className="md:w-1/2 text-gray-700 bg-white/90 shadow-lg p-8 rounded-lg">
-            <h3 className="text-xl font-medium mb-4 ">
+          <article className="md:w-1/2  bg-white/90 shadow-lg p-8 rounded-lg">
+            <h3 className="text-xl font-medium mb-4 text-gray-800 ">
               Artisan Roasters Since 2010
             </h3>
-            <p className="mb-4">
+            <p className="mb-4 text-gray-600">
               We began with a 5kg roaster and a passion for perfecting the
               craft. Today, we operate state-of-the-art Probat roasters,
               meticulously developing profiles for each origin to highlight
               their unique characteristics.
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-gray-600">
               Our direct relationships with growers ensure ethical sourcing and
               premium quality green beans. We specialize in small-batch
               roasting, allowing precise control over each lot - whether it's a
               single-origin for specialty cafes or a consistent blend for
               wholesale partners.
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-gray-600">
               For retail customers, we offer freshly roasted bags with roast
               dates and brewing guides. Wholesale clients benefit from our
               flexible ordering systems, private labeling options, and barista
               training programs.
             </p>
-            <p>
+            <p className="mb-4 text-gray-600">
               Every batch is cupped by our Q-graded team, because we believe
               exceptional coffee should be both scientifically excellent and
               soulfully satisfying.
@@ -79,9 +79,9 @@ const Home = () => {
           </article>
         </div>
       </section>
-      <section className="bg-amber-50 py-12">
+      <section className="bg-white py-12">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold text-center mb-2">
+          <h2 className="text-2xl text-gray-800 font-bold text-center mb-2">
             Featured Coffees
           </h2>
           <p className="text-gray-600 text-center mb-8">
@@ -100,16 +100,16 @@ const Home = () => {
           <div className="text-center mt-10">
             <Link
               to="/shop"
-              className="inline-block bg-amber-600 hover:bg-amber-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
+              className="inline-block bg-amber-700 hover:bg-amber-800 text-white font-medium py-3 px-6 rounded-lg transition-colors"
             >
               View All Coffees →
             </Link>
           </div>
         </div>
       </section>
-      <section className="py-16 bg-amber-50">
+      <section className="py-16 bg-white">
         <div className="container mx-auto">
-          <h2 className="text-2xl font-bold text-center mb-2">
+          <h2 className="text-2xl text-gray-800 font-bold text-center mb-2">
             What Our Customers Say
           </h2>
           <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">

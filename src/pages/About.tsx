@@ -5,108 +5,208 @@ import { useNavigate } from "react-router-dom";
 const About = () => {
   const navigate = useNavigate();
   return (
-    <>
-      <section className="bg-[url(/img/black-coffee.jpg)] h-screen bg-fixed bg-cover bg-center">
-        <div className="flex flex-col justify-center items-center text-center px-6 h-full bg-black/60">
-          <h2 className="text-white text-5xl font-bold mb-4">
-            Crafting Exceptional Coffee since 2019
-          </h2>
-          <p className="text-white text-xl max-w-2xl mx-auto">
-            We're obsessed with bringing you the world's finest single-origin
-            and small-batch roasted coffee.
-          </p>
-        </div>
-      </section>
-
-      <section className="bg-[#f4ebe8] py-12">
-        <h1 className="text-3xl font-bold text-center text-[#6f4e37] mb-10">
-          Brewing Excellence, Cultivating Community
-        </h1>
-
-        <div className="flex flex-col md:flex-row gap-7 items-center mx-auto px-6 max-w-6xl">
-          <div className="md:w-1/2 h-96 rounded-lg overflow-hidden shadow-md">
-            <img
-              src="/img/coffee4.jpg"
-              alt="Founder"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          <article className="md:w-1/2 bg-white/90 shadow-lg rounded-lg p-6 text-[#333]">
-            <p className="text-lg">
-              At Kahve, we believe coffee is more than just a beverage —
-              it&apos;s a lifestyle rooted in mindfulness, wellness, and
-              community. Born from a passion for both the art of coffee and the
-              science of self-care, our mission is to create a space where every
-              sip feels intentional. From ethically-sourced beans and clean
-              ingredients to a serene café experience, we&apos;re redefining
-              coffee culture for the conscious consumer — one cup at a time
-            </p>
-          </article>
-        </div>
-      </section>
-      <section className="bg-[#f4ebe8] py-12">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-[#6f4e37] mb-4">
-            Our Mission
-          </h2>
-          <p className="text-lg text-[#333] mb-6">
-            To elevate the coffee experience through ethical sourcing, artisan
-            roasting, and wellness-focused café culture.
-          </p>
-          <h2 className="text-3xl font-bold text-[#6f4e37] mb-4">Our Vision</h2>
-          <p className="text-lg text-[#333]">
-            To build a conscious coffee lifestyle brand rooted in health,
-            connection, and sustainability — from Nairobi to the world.
-          </p>
-        </div>
-      </section>
-      <section className="bg-[#f9f5f3] py-12">
-        <h2 className="text-3xl font-bold text-center text-[#6f4e37] mb-8">
-          Our Core Values
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6 text-center">
-          <div>
-            <Coffee className="mx-auto mb-3 text-[#6f4e37]" size={36} />
-            <h3 className="font-semibold text-lg mb-2">Quality</h3>
-            <p>Handpicked, roasted to perfection, and brewed with love.</p>
-          </div>
-          <div>
-            <Leaf className="mx-auto mb-3 text-[#6f4e37]" size={36} />
-            <h3 className="font-semibold text-lg mb-2">Sustainability</h3>
-            <p>
-              We care for the planet by sourcing ethically and reducing waste.
-            </p>
-          </div>
-          <div>
-            <Users className="mx-auto mb-3 text-[#6f4e37]" size={36} />
-            <h3 className="font-semibold text-lg mb-2">Community</h3>
-            <p>
-              From local farmers to loyal customers — you are part of our
-              journey.
+    <div className="bg-white/90">
+      {/* Hero Section */}
+      <section className="relative h-screen bg-[url(/img/black-coffee.jpg)] bg-cover bg-center bg-fixed">
+        <div className="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-center px-6">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              Crafting Exceptional Coffee Since 2019
+            </h1>
+            <p className="text-xl text-gray-200 md:text-2xl max-w-3xl mx-auto">
+              We're obsessed with bringing you the world's finest single-origin
+              and small-batch roasted coffee, ethically sourced and artisanally
+              crafted.
             </p>
           </div>
         </div>
       </section>
-      <section className="bg-[#6f4e37] text-white py-12">
-        <div className="max-w-4xl mx-auto text-center px-6">
-          <h2 className="text-3xl font-bold mb-4">
-            Ready to Taste the Experience?
+
+      {/* Story Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+            Brewing Excellence, Cultivating Community
           </h2>
-          <p className="mb-6">
-            Browse our handpicked selection of ethically-sourced coffee and
-            lifestyle products.
+
+          <div className="flex flex-col lg:flex-row gap-12 items-center">
+            <div className="lg:w-1/2 h-[500px] rounded-xl overflow-hidden shadow-xl">
+              <img
+                src="/img/coffee4.jpg"
+                alt="Coffee beans being roasted"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            <div className="lg:w-1/2 bg-white p-8 rounded-xl shadow-lg">
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                At Roaster Bros, we believe coffee is more than just a beverage
+                — it's a connection to the earth, the farmers, and the
+                community. Born from a passion for both the art of coffee and
+                the science of perfect roasting, our mission is to create
+                exceptional experiences in every cup.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                From our direct relationships with coffee growers to our
+                meticulous small-batch roasting process, we're redefining
+                specialty coffee culture — one carefully crafted batch at a
+                time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission & Vision */}
+      <section className="py-16 bg-white/90">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="mb-16 bg-white shadow">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+              Our Mission
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              To elevate the coffee experience through ethical sourcing, artisan
+              roasting, and community-focused café culture.
+            </p>
+          </div>
+          <div className="mb-16 bg-white shadow-sm">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+              Our Vision
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              To build a specialty coffee brand that connects Kenyan coffee
+              lovers with the world's finest beans while supporting sustainable
+              farming practices.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Core Values */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">
+            Our Core Values
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="bg-white p-8 rounded-xl shadow-md text-center">
+              <div className="bg-amber-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Coffee className="text-amber-700" size={28} />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                Quality
+              </h3>
+              <p className="text-gray-600">
+                From bean selection to final roast, we pursue perfection in
+                every step of our process.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-md text-center">
+              <div className="bg-amber-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Leaf className="text-amber-700" size={28} />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                Sustainability
+              </h3>
+              <p className="text-gray-600">
+                We partner with farms using regenerative agriculture and
+                maintain carbon-neutral roasting.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-md text-center">
+              <div className="bg-amber-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Users className="text-amber-700" size={28} />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                Community
+              </h3>
+              <p className="text-gray-600">
+                We invest in coffee-growing communities and create spaces for
+                coffee lovers to connect.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline */}
+      <section className="py-16 ">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">
+            Our Journey
+          </h2>
+
+          <div className="relative">
+            {/* Timeline line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-amber-200"></div>
+
+            {/* Timeline items */}
+            <div className="space-y-12">
+              <div className="relative flex flex-col md:flex-row items-center">
+                <div className="md:w-1/2 md:pr-5 md:text-right">
+                  <h3 className="text-xl font-bold text-amber-700 mb-2">
+                    2019
+                  </h3>
+                  <p className="text-gray-600">
+                    Founded with a vision to bring specialty coffee to Nairobi
+                  </p>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2  w-4 h-4 rounded-full bg-amber-600 border-4 border-amber-100 mt-1 md:mt-0"></div>
+                <div className="md:w-1/2 md:pl-12"></div>
+              </div>
+
+              <div className="relative flex flex-col md:flex-row items-center">
+                <div className="md:w-1/2 md:pr-12 md:text-right"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2  w-4 h-4 rounded-full bg-amber-600 border-4 border-amber-100 mt-1 md:mt-0"></div>
+                <div className="md:w-1/2 md:pl-5">
+                  <h3 className="text-xl font-bold text-amber-700 mb-2">
+                    2021
+                  </h3>
+                  <p className="text-gray-600">
+                    Opened our first flagship coffee bar in Westlands
+                  </p>
+                </div>
+              </div>
+
+              <div className="relative flex flex-col md:flex-row items-center">
+                <div className="md:w-1/2 md:pr-5 md:text-right">
+                  <h3 className="text-xl font-bold text-amber-700 mb-2">
+                    2024
+                  </h3>
+                  <p className="text-gray-600">
+                    Launched our online store with nationwide delivery
+                  </p>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2  w-4 h-4 rounded-full bg-amber-600 border-4 border-amber-100 mt-1 md:mt-0"></div>
+                <div className="md:w-1/2 md:pl-12"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-white/90 text-gray-800">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Ready to Experience Our Coffee?
+          </h2>
+          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            Discover our carefully curated selection of single-origin and
+            specialty blend coffees, roasted to perfection.
           </p>
           <Button
-            variant="secondary"
             onClick={() => navigate("/shop")}
-            className="bg-white text-[#6f4e37] hover:bg-[#f4ebe8]"
+            className="bg-amber-700 text-white hover:bg-amber-800 px-8 py-6 text-lg font-medium"
           >
-            Explore Products
+            Shop Our Coffee
           </Button>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
