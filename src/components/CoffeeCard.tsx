@@ -1,11 +1,14 @@
 import type { CoffeeProduct } from "@/types";
 import { ArrowRight, HeartPlus } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { Button } from "./ui/button";
 
 interface CoffeeCardProps {
   product: CoffeeProduct;
 }
 
 const CoffeeCard = ({ product }: CoffeeCardProps) => {
+  const navigate = useNavigate();
   return (
     <div className="group relative border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 bg-white">
       <div className="h-60 overflow-hidden">
@@ -68,10 +71,13 @@ const CoffeeCard = ({ product }: CoffeeCardProps) => {
           ))}
         </div>
 
-        <button className="w-full bg-amber-600 hover:bg-amber-700 text-white py-2.5 rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-2">
+        <Button
+          onClick={() => navigate(`/details/${product.id}`)}
+          className="w-full bg-amber-600 hover:bg-amber-700 text-white py-2.5 rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-2"
+        >
           <span>View Details</span>
           <ArrowRight />
-        </button>
+        </Button>
       </div>
     </div>
   );
