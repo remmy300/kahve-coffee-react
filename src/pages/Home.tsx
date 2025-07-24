@@ -42,8 +42,9 @@ const Home = () => {
         <div className="py-16 px-6 max-w-6xl mx-auto flex flex-col md:flex-row gap-8 items-center">
           <div className="md:w-1/2 shadow rounded-lg overflow-hidden">
             <img
-              src="/img/grinder.jpg"
+              src="/img/grinder.webp"
               alt="Coffee roasting process"
+              loading="lazy"
               className="w-full h-auto object-cover"
             />
           </div>

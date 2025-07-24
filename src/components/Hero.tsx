@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative h-screen bg-[url('/img/coffee.jpg')] bg-cover bg-center bg-no-repeat"
+      className="relative h-screen bg-[url('/img/coffee.webp')] bg-cover bg-center bg-no-repeat"
       style={{ backgroundAttachment: "fixed" }}
     >
       {/* Overlay with smooth transition */}
@@ -34,12 +34,12 @@ const Hero = () => {
           <div className="flex items-center gap-2">
             <div className="flex -space-x-2">
               <img
-                src="/img/arabica.jpg"
+                src="/img/arabica.webp"
                 className="w-10 h-10 rounded-full border-2 border-amber-500 object-cover"
                 alt="Arabica coffee"
               />
               <img
-                src="/img/coffee4.jpg"
+                src="/img/coffee4.webp"
                 className="w-10 h-10 rounded-full border-2 border-amber-500 object-cover"
                 alt="Coffee beans"
               />

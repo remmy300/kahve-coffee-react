@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className="bg-white/90">
       {/* Hero Section */}
-      <section className="relative h-screen bg-[url(/img/black-coffee.jpg)] bg-cover bg-center bg-fixed">
+      <section className="relative h-screen bg-[url(/img/black-coffee.webp)] bg-cover bg-center bg-fixed">
         <div className="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-center px-6">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
@@ -32,7 +32,7 @@ const About = () => {
           <div className="flex flex-col lg:flex-row gap-12 items-center">
             <div className="lg:w-1/2 h-[500px] rounded-xl overflow-hidden shadow-xl">
               <img
-                src="/img/coffee4.jpg"
+                src="/img/coffee4.webp"
                 alt="Coffee beans being roasted"
                 className="w-full h-full object-cover"
               />

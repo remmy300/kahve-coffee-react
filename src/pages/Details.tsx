@@ -86,9 +86,13 @@ const Details = () => {
             <img
               src={product.images[0]}
               alt={product.name}
+              loading="lazy"
               className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
             />
-            <button className="absolute top-4 right-4 p-2 rounded-full bg-white/80 backdrop-blur-sm shadow-sm hover:bg-amber-50 transition-colors">
+            <button
+              className="absolute top-4 right-4 p-2 rounded-full bg-white/80 backdrop-blur-sm shadow-sm hover:bg-amber-50 transition-colors "
+              aria-label="save to favorites"
+            >
               <Heart className="w-5 h-5 text-gray-700" />
             </button>
           </div>
@@ -100,6 +104,7 @@ const Details = () => {
               >
                 <img
                   src={image}
+                  loading="lazy"
                   alt={`${product.name} ${index + 1}`}
                   className="w-full h-full object-cover"
                 />
