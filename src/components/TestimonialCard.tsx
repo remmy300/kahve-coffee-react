@@ -1,4 +1,3 @@
-// components/TestimonialCard.tsx
 import type { Testimonial } from "@/types";
 import AvatarPlaceholder from "./AvatarPlaceholder";
 import { Star } from "lucide-react";

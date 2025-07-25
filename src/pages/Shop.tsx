@@ -1,4 +1,3 @@
-import React from "react";
 import { coffeeProducts } from "@/Data";
 import type { CoffeeProduct } from "@/types";
 import CoffeeCard from "@/components/CoffeeCard";
