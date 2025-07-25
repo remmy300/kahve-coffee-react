@@ -7,10 +7,8 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative h-screen bg-[url('/img/coffee.webp')] bg-cover bg-center bg-no-repeat"
-      style={{ backgroundAttachment: "fixed" }}
+      className="relative h-screen bg-[url('/img/coffee1.webp')] bg-cover bg-center bg-no-repeat"
     >
-      {/* Overlay with smooth transition */}
       <div className="absolute inset-0 bg-gray-900/60 transition-all duration-500 hover:bg-gray-900/50"></div>
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 space-y-6">

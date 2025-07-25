@@ -10,7 +10,7 @@ interface CoffeeCardProps {
 const CoffeeCard = ({ product }: CoffeeCardProps) => {
   const navigate = useNavigate();
   return (
-    <div className="group relative border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 bg-white">
+    <div className="group relative border border-gray-200 rounded-xl  shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 bg-white">
       <div className="h-60 overflow-hidden">
         <img
           src={product.images[0]}
@@ -21,12 +21,12 @@ const CoffeeCard = ({ product }: CoffeeCardProps) => {
       </div>
 
       <div className="absolute top-3 right-3">
-        <Button
+        <button
           aria-label="Add to favorites"
           className="p-2 rounded-full bg-white/90 backdrop-blur-sm shadow-sm hover:bg-amber-50 transition-colors"
         >
-          <HeartPlus className="hover:text-amber-600" />
-        </Button>
+          <HeartPlus className="hover:text-amber-700" />
+        </button>
       </div>
 
       <div className="p-5">

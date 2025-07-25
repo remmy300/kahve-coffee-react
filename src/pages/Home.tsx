@@ -33,7 +33,7 @@ const Home = () => {
     }
   }
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Hero />
       <section className="bg-white py-12">
         <h2 className="text-2xl text-gray-800 font-semibold mt-3 text-center">
