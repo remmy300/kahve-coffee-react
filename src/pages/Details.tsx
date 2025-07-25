@@ -31,7 +31,7 @@ const Details = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Product Header */}
       <div className="mb-8">
-        <nav className="flex items-center text-sm text-gray-500 mb-4">
+        <nav className="flex items-center text-sm text-gray-700 mb-4">
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
@@ -68,10 +68,10 @@ const Details = () => {
                 }`}
               />
             ))}
-            <span className="ml-2 text-gray-600">{product.score}/100</span>
+            <span className="ml-2 text-gray-700">{product.score}/100</span>
           </div>
           <span className="text-gray-400">•</span>
-          <span className="text-gray-600">
+          <span className="text-gray-700">
             Roasted on {new Date(product.roastDate).toLocaleDateString()}
           </span>
         </div>
@@ -149,21 +149,21 @@ const Details = () => {
               <div className="flex items-center gap-3">
                 <Coffee className="w-5 h-5 text-amber-600" />
                 <div>
-                  <p className="text-sm text-gray-500">Farm</p>
+                  <p className="text-sm text-gray-700">Farm</p>
                   <p className="font-medium">{product.farm}</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <Scale className="w-5 h-5 text-amber-600" />
                 <div>
-                  <p className="text-sm text-gray-500">Altitude</p>
+                  <p className="text-sm text-gray-700">Altitude</p>
                   <p className="font-medium">{product.altitude}</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-amber-600" />
                 <div>
-                  <p className="text-sm text-gray-500">Process</p>
+                  <p className="text-sm text-gray-700">Process</p>
                   <p className="font-medium">{product.process}</p>
                 </div>
               </div>

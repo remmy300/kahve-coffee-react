@@ -60,20 +60,20 @@ const About = () => {
       {/* Mission & Vision */}
       <section className="py-16 bg-white/90">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="mb-16 bg-white shadow">
+          <div className="mb-16 bg-white ">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
               Our Mission
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               To elevate the coffee experience through ethical sourcing, artisan
               roasting, and community-focused café culture.
             </p>
           </div>
-          <div className="mb-16 bg-white shadow-sm">
+          <div className="mb-16 bg-white ">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
               Our Vision
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               To build a specialty coffee brand that connects Kenyan coffee
               lovers with the world's finest beans while supporting sustainable
               farming practices.
@@ -97,7 +97,7 @@ const About = () => {
               <h3 className="text-xl font-semibold text-gray-800 mb-4">
                 Quality
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-700">
                 From bean selection to final roast, we pursue perfection in
                 every step of our process.
               </p>
@@ -110,7 +110,7 @@ const About = () => {
               <h3 className="text-xl font-semibold text-gray-800 mb-4">
                 Sustainability
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-700">
                 We partner with farms using regenerative agriculture and
                 maintain carbon-neutral roasting.
               </p>
@@ -123,7 +123,7 @@ const About = () => {
               <h3 className="text-xl font-semibold text-gray-800 mb-4">
                 Community
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-700">
                 We invest in coffee-growing communities and create spaces for
                 coffee lovers to connect.
               </p>
@@ -150,7 +150,7 @@ const About = () => {
                   <h3 className="text-xl font-bold text-amber-700 mb-2">
                     2019
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-700">
                     Founded with a vision to bring specialty coffee to Nairobi
                   </p>
                 </div>
@@ -165,7 +165,7 @@ const About = () => {
                   <h3 className="text-xl font-bold text-amber-700 mb-2">
                     2021
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-700">
                     Opened our first flagship coffee bar in Westlands
                   </p>
                 </div>
@@ -176,7 +176,7 @@ const About = () => {
                   <h3 className="text-xl font-bold text-amber-700 mb-2">
                     2024
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-700">
                     Launched our online store with nationwide delivery
                   </p>
                 </div>

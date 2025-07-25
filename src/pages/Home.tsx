@@ -50,29 +50,29 @@ const Home = () => {
           </div>
 
           <article className="md:w-1/2  bg-white/90 shadow-lg p-8 rounded-lg">
-            <h3 className="text-xl font-medium mb-4 text-gray-800 ">
+            <h2 className="text-xl font-medium mb-4 text-gray-800 ">
               Artisan Roasters Since 2010
-            </h3>
-            <p className="mb-4 text-gray-600">
+            </h2>
+            <p className="mb-4 text-gray-700">
               We began with a 5kg roaster and a passion for perfecting the
               craft. Today, we operate state-of-the-art Probat roasters,
               meticulously developing profiles for each origin to highlight
               their unique characteristics.
             </p>
-            <p className="mb-4 text-gray-600">
+            <p className="mb-4 text-gray-700">
               Our direct relationships with growers ensure ethical sourcing and
               premium quality green beans. We specialize in small-batch
               roasting, allowing precise control over each lot - whether it's a
               single-origin for specialty cafes or a consistent blend for
               wholesale partners.
             </p>
-            <p className="mb-4 text-gray-600">
+            <p className="mb-4 text-gray-700">
               For retail customers, we offer freshly roasted bags with roast
               dates and brewing guides. Wholesale clients benefit from our
               flexible ordering systems, private labeling options, and barista
               training programs.
             </p>
-            <p className="mb-4 text-gray-600">
+            <p className="mb-4 text-gray-700">
               Every batch is cupped by our Q-graded team, because we believe
               exceptional coffee should be both scientifically excellent and
               soulfully satisfying.
@@ -85,7 +85,7 @@ const Home = () => {
           <h2 className="text-2xl text-gray-800 font-bold text-center mb-2">
             Featured Coffees
           </h2>
-          <p className="text-gray-600 text-center mb-8">
+          <p className="text-gray-700 text-center mb-8">
             Discover our premium selections
           </p>
 
@@ -113,7 +113,7 @@ const Home = () => {
           <h2 className="text-2xl text-gray-800 font-bold text-center mb-2">
             What Our Customers Say
           </h2>
-          <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+          <p className="text-gray-700 text-center mb-12 max-w-2xl mx-auto">
             Hear from coffee lovers and wholesale partners
           </p>
 

@@ -21,9 +21,12 @@ const CoffeeCard = ({ product }: CoffeeCardProps) => {
       </div>
 
       <div className="absolute top-3 right-3">
-        <button className="p-2 rounded-full bg-white/90 backdrop-blur-sm shadow-sm hover:bg-amber-50 transition-colors">
+        <Button
+          aria-label="Add to favorites"
+          className="p-2 rounded-full bg-white/90 backdrop-blur-sm shadow-sm hover:bg-amber-50 transition-colors"
+        >
           <HeartPlus className="hover:text-amber-600" />
-        </button>
+        </Button>
       </div>
 
       <div className="p-5">

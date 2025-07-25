@@ -63,7 +63,7 @@ const Contact = () => {
                   <Phone className="h-5 w-5 text-amber-700" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-gray-900">Call Us</h3>
+                  <h2 className="text-lg font-medium text-gray-900">Call Us</h2>
                   <p className="text-gray-600">+254 732 100 200</p>
                   <p className="text-sm text-gray-500 mt-1">
                     Mon-Fri, 8am-5pm EAT
@@ -91,9 +91,9 @@ const Contact = () => {
                   <MapPin className="h-5 w-5 text-amber-700" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-gray-900">
+                  <h2 className="text-lg font-medium text-gray-900">
                     Visit Us
-                  </h3>
+                  </h2>
                   <p className="text-gray-600">P.O Box 32657</p>
                   <p className="text-gray-600">Nairobi, Kenya</p>
                 </div>
