@@ -1,11 +1,13 @@
-import Home from "@/pages/Home";
-import About from "@/pages/About";
-import Contact from "@/pages/Contact";
-import Shop from "@/pages/Shop";
-import App from "@/App";
-import Details from "@/pages/Details";
-import React from "react";
+import React, { Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
+import App from "@/App";
+import Spinner from "@/components/ui/spinner";
+
+const Home = React.lazy(() => import("@/pages/Home"));
+const About = React.lazy(() => import("@/pages/About"));
+const Contact = React.lazy(() => import("@/pages/Contact"));
+const Shop = React.lazy(() => import("@/pages/Shop"));
+const Details = React.lazy(() => import("@/pages/Details"));
 
 export const router = createBrowserRouter([
   {
@@ -14,27 +16,51 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: React.createElement(Home),
+        element: React.createElement(
+          Suspense,
+          { fallback: React.createElement(Spinner) },
+          React.createElement(Home)
+        ),
       },
       {
         path: "home",
-        element: React.createElement(Home),
+        element: React.createElement(
+          Suspense,
+          { fallback: React.createElement(Spinner) },
+          React.createElement(Home)
+        ),
       },
       {
         path: "about",
-        element: React.createElement(About),
+        element: React.createElement(
+          Suspense,
+          { fallback: React.createElement(Spinner) },
+          React.createElement(About)
+        ),
       },
       {
         path: "shop",
-        element: React.createElement(Shop),
+        element: React.createElement(
+          Suspense,
+          { fallback: React.createElement(Spinner) },
+          React.createElement(Shop)
+        ),
       },
       {
         path: "contact",
-        element: React.createElement(Contact),
+        element: React.createElement(
+          Suspense,
+          { fallback: React.createElement(Spinner) },
+          React.createElement(Contact)
+        ),
       },
       {
         path: "details/:id",
-        element: React.createElement(Details),
+        element: React.createElement(
+          Suspense,
+          { fallback: React.createElement(Spinner) },
+          React.createElement(Details)
+        ),
       },
     ],
   },
