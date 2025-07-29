@@ -4,7 +4,7 @@ import { Star } from "lucide-react";
 
 const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md h-full">
+    <div className="bg-white p-6 rounded-lg shadow-md h-full min-h-[300px] flex flex-col justify-between">
       <div className="flex  items-center mb-4 gap-2">
         <AvatarPlaceholder
           initials={testimonial.initials}
@@ -30,7 +30,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
           />
         ))}
       </div>
-      <blockquote className="text-gray-800 italic mb-4">
+      <blockquote className="text-gray-800 italic mb-4 line-clamp-3">
         "{testimonial.content}"
       </blockquote>
       <p className="text-sm text-gray-600">{testimonial.date}</p>
