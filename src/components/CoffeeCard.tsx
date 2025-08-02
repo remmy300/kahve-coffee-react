@@ -2,13 +2,15 @@ import type { CoffeeProduct } from "@/types";
 import { ArrowRight, HeartPlus } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
-
+import { useCartContext } from "@/context/CartContext";
 interface CoffeeCardProps {
   product: CoffeeProduct;
 }
 
 const CoffeeCard = ({ product }: CoffeeCardProps) => {
   const navigate = useNavigate();
+  const { addToCart } = useCartContext();
+
   return (
     <div className="group relative border border-gray-200 rounded-xl  shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 bg-white">
       <div className="h-60 overflow-hidden">
@@ -20,7 +22,7 @@ const CoffeeCard = ({ product }: CoffeeCardProps) => {
         />
       </div>
 
-      <div className="absolute top-3 right-3">
+      <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100">
         <button
           aria-label="Add to favorites"
           className="p-2 rounded-full bg-white/90 backdrop-blur-sm shadow-sm hover:bg-amber-50 transition-colors"
@@ -74,14 +76,21 @@ const CoffeeCard = ({ product }: CoffeeCardProps) => {
             </span>
           ))}
         </div>
-
-        <Button
-          onClick={() => navigate(`/details/${product.id}`)}
-          className="w-full bg-amber-600 hover:bg-amber-700 text-white py-2.5 rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-2"
-        >
-          <span>View Details</span>
-          <ArrowRight />
-        </Button>
+        <div className="flex justify-between opacity-0 group-hover:opacity-100">
+          <Button
+            onClick={() => addToCart(product)}
+            className="text-sm bg-amber-600 hover:bg-amber-700"
+          >
+            Add To Cart
+          </Button>
+          <Button
+            onClick={() => navigate(`/details/${product.id}`)}
+            className=" bg-amber-600 hover:bg-amber-700 text-white py-2.5 rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-2"
+          >
+            <span>View Details</span>
+            <ArrowRight />
+          </Button>
+        </div>
       </div>
     </div>
   );

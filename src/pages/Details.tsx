@@ -1,6 +1,7 @@
 import { coffeeProducts } from "@/Data";
 import type { CoffeeProduct } from "@/types";
 import { useParams, Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import {
   Star,
   Heart,
@@ -18,9 +19,11 @@ import {
   BreadcrumbPage,
   BreadcrumbList,
 } from "@/components/ui/breadcrumb";
+import { useCartContext } from "@/context/CartContext";
 
 const Details = () => {
   const { id } = useParams<{ id: string }>();
+  const { addToCart } = useCartContext();
   const product = coffeeProducts.find(
     (product) => product.id === id
   ) as CoffeeProduct;
@@ -126,9 +129,12 @@ const Details = () => {
                 </span>
               )}
             </div>
-            <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-300">
+            <Button
+              onClick={() => addToCart(product)}
+              className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-300"
+            >
               Add to Cart - {product.weight}g
-            </button>
+            </Button>
           </div>
 
           {/* Origin Story */}

@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { Sheet, SheetTrigger, SheetContent } from "./ui/sheet";
+
+import CartModal from "./CartModal";
 import { Menu } from "lucide-react";
 
 const NavBar = () => {
@@ -42,6 +44,9 @@ const NavBar = () => {
           </Link>
         ))}
       </nav>
+      <div className="z-[60]">
+        <CartModal />
+      </div>
 
       {/* Mobile */}
       <nav className="md:hidden">

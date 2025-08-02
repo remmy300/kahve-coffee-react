@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import App from "@/App";
 import Spinner from "@/components/ui/spinner";
+import Cart from "@/pages/Cart";
 
 const Home = React.lazy(() => import("@/pages/Home"));
 const About = React.lazy(() => import("@/pages/About"));
@@ -60,6 +61,14 @@ export const router = createBrowserRouter([
           Suspense,
           { fallback: React.createElement(Spinner) },
           React.createElement(Details)
+        ),
+      },
+      {
+        path: "cart",
+        element: React.createElement(
+          Suspense,
+          { fallback: React.createElement(Spinner) },
+          React.createElement(Cart)
         ),
       },
     ],

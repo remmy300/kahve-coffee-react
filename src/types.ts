@@ -1,6 +1,7 @@
 export type CoffeeProduct = {
   id: string;
   name: string;
+  quantity: number;
   type: "single-origin" | "blend";
   origin?: string;
   region?: string;
